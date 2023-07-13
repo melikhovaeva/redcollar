@@ -1,0 +1,8 @@
+@use '../utils/mixin' as *;
+
+.about {
+  margin: 0 auto;
+  &_wrapper {
+    @include wrapper;
+  }
+}

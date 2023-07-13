@@ -1,0 +1,122 @@
+@font-face {
+  font-display: swap;
+  font-family: "TTCommons DemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/TTCommons-DemiBold.eot");
+  src: url("/fonts/TTCommons-DemiBold.woff2") format("woff2"), url("/fonts/TTCommons-DemiBold.woff") format("woff"), url("/fonts/TTCommons-DemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "TTCommons";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/TTCommons-Regular.eot");
+  src: url("/fonts/TTCommons-Regular.woff2") format("woff2"), url("/fonts/TTCommons-Regular.woff") format("woff"), url("/fonts/TTCommons-Regular.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "TTCommons", sans-serif;
+}
+
+body {
+  font-size: 16px;
+  color: white;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+.header__logo {
+  margin: 20px;
+}
+
+.about {
+  margin: 0 auto;
+}
+.about_wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  margin: 0 auto;
+}
+@media screen and (min-width: 350px) {
+  .about_wrapper {
+    max-width: 320px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .about_wrapper {
+    max-width: 540px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about_wrapper {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .about_wrapper {
+    max-width: 960px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about_wrapper {
+    max-width: 1140px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about_wrapper {
+    max-width: 1300px;
+  }
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.data__photo {
+  width: 320px;
+}
+.data__info {
+  position: absolute;
+  top: 300px;
+  padding: 24px 16px 40px 16px;
+  border-radius: 20px 20px 0px 0px;
+  min-width: 320px;
+  background-color: #F51B1B;
+}
+.data__info::before {
+  content: url(/img/arrow.svg);
+  display: block;
+  position: absolute;
+  top: -18.5px;
+}
+.data__contact {
+  margin-top: 32px;
+  list-style: none;
+}
+.data__contact-item {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.data__link {
+  color: white;
+  margin-left: 16px;
+}/*# sourceMappingURL=style.css.map */
