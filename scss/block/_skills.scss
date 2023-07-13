@@ -1,0 +1,35 @@
+@use '../utils/variables' as *;
+
+.skills {
+  position: relative;
+  padding: 30px 15px 30px 15px;
+  border: 1px solid white;
+
+  &::before {
+    content: url(/img/arrow-2.svg);
+    display: block;
+    position: absolute;
+    top: -1.3px;
+    left: 41%;
+  }
+
+  &__list {
+    display: flex;
+    max-width: 280px;
+    justify-content: space-between;
+    list-style: none;
+    padding-bottom: 24px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  &__title {
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+
+  &__description {
+    opacity: 40%;
+  }
+
+}

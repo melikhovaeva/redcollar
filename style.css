@@ -23,6 +23,7 @@
 
 body {
   font-size: 16px;
+  line-height: 20px;
   color: white;
   background-color: black;
 }
@@ -45,6 +46,7 @@ h2 {
 
 .about {
   margin: 0 auto;
+  max-width: 320px;
 }
 .about_wrapper {
   display: grid;
@@ -81,6 +83,13 @@ h2 {
   .about_wrapper {
     max-width: 1300px;
   }
+}
+.about__story-me {
+  margin: 0 auto;
+  margin-top: 10rem;
+}
+.about__skills {
+  margin-top: 24px;
 }
 
 .data {
@@ -119,4 +128,33 @@ h2 {
 .data__link {
   color: white;
   margin-left: 16px;
+}
+
+.skills {
+  position: relative;
+  padding: 30px 15px 30px 15px;
+  border: 1px solid white;
+}
+.skills::before {
+  content: url(/img/arrow-2.svg);
+  display: block;
+  position: absolute;
+  top: -1.3px;
+  left: 41%;
+}
+.skills__list {
+  display: flex;
+  max-width: 280px;
+  justify-content: space-between;
+  list-style: none;
+  padding-bottom: 24px;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.skills__title {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+.skills__description {
+  opacity: 40%;
 }/*# sourceMappingURL=style.css.map */

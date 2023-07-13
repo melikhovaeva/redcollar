@@ -2,7 +2,18 @@
 
 .about {
   margin: 0 auto;
+  max-width: 320px;
   &_wrapper {
     @include wrapper;
+  }
+
+  &__story-me {
+    margin: 0 auto;
+    margin-top: 10rem;
+    
+  }
+
+  &__skills {
+    margin-top: 24px;
   }
 }
