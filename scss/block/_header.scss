@@ -1,5 +1,25 @@
+@use '../utils/mixin' as *;
+
 .header {
+  &__wrapper {
+    @include wrapper;
+    display: flex;
+  }
   &__logo {
     margin: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    &__wrapper {
+      justify-content: flex-end;
+    }
+
+    &__logo {
+      margin: 0px;
+      margin-top: 20px;
+      margin-right: 20px;
+    }
   }
 }

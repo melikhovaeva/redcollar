@@ -43,3 +43,9 @@
     margin-left: 16px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .data {
+    align-items: flex-start;
+  }  
+}
