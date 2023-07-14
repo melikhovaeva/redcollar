@@ -92,6 +92,42 @@
         </section>
       </div>
     </article>
+    <section class="pomodoro">
+      <div class="pomodoro__timer">
+        <div class="pomodoro__timer">
+          <div class="pomodoro__mode-buttons" id="mode-buttons">
+            <button
+              data-mode="pomodoro"
+              class="pomodoro__mode-button pomodoro__mode-button--active"
+              id="pomodoro"
+            >
+              Pomodoro
+            </button>
+            <button
+              data-mode="shortBreak"
+              class="pomodoro__mode-button"
+              id="short-break"
+            >
+              Short break
+            </button>
+            <button
+              data-mode="longBreak"
+              class="pomodoro__mode-button"
+              id="long-break"
+            >
+              Long break
+            </button>
+          </div>
+          <div class="pomodoro__clock" id="clock">
+            <span id="minutes">25</span>
+            <span class="separator">:</span>
+            <span id="seconds">00</span>
+          </div>
+          <button class="pomodoro__button" data-action="start" id="btn">
+            Start
+          </button>
+      </div>
+    </section>
   </main>
   <footer>
 

@@ -1,0 +1,83 @@
+@use '../utils/mixin' as *;
+@use '../utils/variables' as *;
+
+.pomodoro {
+  margin-top: 3rem;
+
+  &__wrapper {
+    @include wrapper;
+  }
+
+  &__timer {
+    padding: 20px;
+    text-align: center;
+  }
+
+  &__mode-button {
+    height: 28px;
+    cursor: pointer;
+    color: $textColor;
+    border: 1px solid #fff;
+    margin: 0px;
+    border-radius: 4px;
+    padding: 2px 12px;
+    background: none;
+
+    &--active {
+      background-color: $accentColor;
+      transition: background-color 0.6s;
+      border: 1px solid $accentColor;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      outline: none;
+    }
+  }
+
+  &__clock {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 8rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__button {
+    cursor: pointer;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    font-size: 22px;
+    height: 30px;
+    text-transform: uppercase;
+    color: $accentColor;
+    font-weight: bold;
+    width: 200px;
+    background-color: white;
+    border-width: initial;
+    border-style: none;
+    margin: 10px 0px 0px;
+    padding: 0px 12px;
+    border-radius: 4px;
+    transition: color 0.5s ease-in-out 0s;
+
+    &--active {
+      transform: translateY(6px);
+      box-shadow: none;
+      outline: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .pomodoro {
+    &__clock {
+    font-size: 16rem;
+    }
+  }
+}
